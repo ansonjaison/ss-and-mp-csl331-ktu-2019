@@ -44,7 +44,6 @@ void main()
     printf("\nPROCESS ID\tPROCESS SIZE\tBLOCK NUMBER\tFREE SPACE\n");
     printf("\n-------------------------------------------------------------------");
 
-    // First fit: i -> process, j -> block
     while (i < n)
     {
         if (p[i].alloc == 0)
@@ -67,7 +66,6 @@ void main()
         i++;
     }
 
-    // Printing processes not allocated
     for (i = 0; i < n; i++)
     {
         if (p[i].alloc == 0)
